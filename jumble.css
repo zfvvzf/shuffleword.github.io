@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background:rgb(0, 255, 0);
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    position:relative;
+    height:100px;
+    width: 100vw;
+    background:rgb(49, 166, 65) ;
+    box-shadow: 0px 0px 5px black,0px 0px 10px black,0px 0px 15px black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Carter One', cursive;
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px white,0px 0px 10px white,0px 0px 15px white;
+    cursor: pointer;
+    transition: 2s;
+}
+.head:hover{
+    color: red;
+    text-shadow: 0px 0px 5px white,0px 0px 10px white,0px 0px 15px white;
+}
+.head .gu{
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+.body{
+    position: relative;
+    height:calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .try{
+    position: absolute;
+    top: 40px;
+    font-size:3em;
+    color: rgb(78, 78, 78);
+    text-shadow: 0px 0px 5px white,0px 0px 10px white,0px 0px 15px white, 0px 0px 20px white,0px 0px 25px white,0px 0px 30px white;
+}
+.body .word{
+    position: absolute;
+    top: 180px;
+    font-size: 3em;
+    color:#0011A8;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px white,0px 0px 10px #0011A8,0px 0px 15px white, 0px 0px 20px #0011A8,0px 0px 25px white,0px 0px 30px #0011A8;
+}
+.body .alert{
+    position: absolute;
+    top: 230px;
+    font-size: 2.5em;
+    color:#0011A8;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px white,0px 0px 10px #0011A8,0px 0px 15px white, 0px 0px 20px #0011A8,0px 0px 25px white,0px 0px 30px #0011A8;
+}
+.body .inp{
+    position: absolute;
+    top: 300px;
+    font-size: 2em;
+    width: 250px;
+    border-radius: 10px;
+    text-transform:lowercase;
+    text-align: center;
+    font-weight: bolder;
+    background:red;
+    color: white;
+    opacity:0;
+    border: none;
+}
+.body #but{
+    position: absolute;
+    top: 210px;
+    font-size: 2em;
+    font-weight: bolder;
+    border-radius: 20px;
+    height:50px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    background: crimson;
+    cursor: pointer;
+    box-shadow:0px 0px 5px black,0px 0px 10px black,0px 0px 15px black;
+}
